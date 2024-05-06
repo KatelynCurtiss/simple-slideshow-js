@@ -12,10 +12,36 @@
     <h3>Career Tech / Js Slideshow></h3>
       <figure>
         <img name="slide" alt="" width="400" height="200">
-        <figcaption id="animation-caption"></figcaption>
+        <figcaption id="scotland-captoin"></figcaption>
       </figure>
    </div>
 
+   <script>
+     var i = 0;
+    var images = [];
+    var time = 1000;
+
+ // image list
+    images[0] = "";
+    images[1] = 'scotland2.jpg';
+    images[2] = 'scotland3.jpg';
+    images[3] = 'scotland4.jpg';
+
+// Change Image 
+function changeImg(){
+    document.hasChildNodes.src = images[i]
+
+    if(i < images.length - 1){
+        i++;
+    } else {
+        i = 0;
+    }
+
+    setTimeout("changeImg()", time);
+}
+   </script>
+
+   
     <script src = "main.js"></script>
     
 </body>

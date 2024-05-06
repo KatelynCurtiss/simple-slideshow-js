@@ -1,23 +1,31 @@
+// Katelyn Curtiss
+// 5 May 2024 
+// Javascript Slideshow
 
-    var i = 0;
-    var images = [];
-    var time = 1000;
+//Declare and initialize varibles
+let i = 0; // Create and initialize the counter vairable
 
- // image list
-    images[0] = 'image1.jpg';
-    images[1] = 'image2.jpg';
-    images[2] = 'image2.jpg';
-    images[3] = 'image3.jpg';
+const images = []; // Start with an empty array
+// Image array
+images[0] = 'scotland1.jpg';
+    images[1] = 'scotland2.jpg';
+    images[2] = 'scotland3.jpg';
+    images[3] = 'scotland4.jpg';
 
-// Change Image 
+// Image captions array
+const captions = ['Scotland #1', 'Scotland #2','Scotland #3','Scotland #4'];
+
+const time = 3000; 
+
+// Function that switches the image
 function changeImg(){
-    document.hasChildNodes.src = images[i]
+    document.hasChildNodes.src = images[i];
 
-    if(i < images.length - 1){
-        i++;
+    if (i < images.lengh - 1){
+        i++; // Increase index number for the image by 1 each time the function runs
     } else {
         i = 0;
-    }
+    } // End of statement 
+}  //End of changeImg( ) function
 
-    setTimeout("changeImg()", time);
-}
+window.onload = changeImg; 
