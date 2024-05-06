@@ -7,7 +7,8 @@ let i = 0; // Create and initialize the counter vairable
 
 const images = []; // Start with an empty array
 // Image array
-images[0] = 'scotland1.jpg';
+
+    images[0] = 'scotland1.jpg';
     images[1] = 'scotland2.jpg';
     images[2] = 'scotland3.jpg';
     images[3] = 'scotland4.jpg';
