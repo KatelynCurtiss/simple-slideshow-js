@@ -26,7 +26,8 @@ function changeImg(){
         i++; // Increase index number for the image by 1 each time the function runs
     } else {
         i = 0;
-    } // End of statement 
+    } // End of statement
+    setTimeout("changeImg()", time)
 }  //End of changeImg( ) function
 
 window.onload = changeImg; 

@@ -4,7 +4,7 @@
 
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: rgb(248, 65, 65);
+    color: rgb(186, 0, 180);
 }
 
 .wrapper {
@@ -14,7 +14,7 @@ body {
     display: grid;
     justify-content: center;
     padding: 30px;
-    background-color: lightgrey;
+    background-color: rgb(255, 154, 218);
 }
 
 .wrapper h2, h3 {
